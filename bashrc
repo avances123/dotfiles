@@ -75,7 +75,6 @@ fi
 # some more ls aliases
 alias ll='ls -lrtah'
 alias la='ls -A'
-alias l='ls -CF'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -103,4 +102,5 @@ HISTSIZE=2000000
 HISTFILESIZE=2000000
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
-
+# bashmarks
+source /home/fabio/dotfiles/bashmarks/bashmarks.sh
