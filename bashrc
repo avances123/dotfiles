@@ -75,7 +75,7 @@ fi
 # some more ls aliases
 alias ll='ls -lrtah'
 alias la='ls -A'
-
+alias gnome-terminal='gnome-terminal --window --maximize'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -100,7 +100,7 @@ fi
 shopt -s histappend
 HISTSIZE=2000000
 HISTFILESIZE=2000000
-export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
 # bashmarks
 source /home/fabio/dotfiles/bashmarks/bashmarks.sh
