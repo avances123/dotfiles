@@ -73,7 +73,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # some more ls aliases
-alias ll='ls -lrtah'
+alias ll='ls -lrth'
 alias la='ls -A'
 alias gnome-terminal='gnome-terminal --window --maximize'
 # Add an "alert" alias for long running commands.  Use like so:
