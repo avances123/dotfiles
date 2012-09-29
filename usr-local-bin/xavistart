@@ -1,0 +1,3 @@
+VBoxHeadless -s xavi &
+sleep 30
+ssh -p 2222 localhost
