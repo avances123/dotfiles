@@ -103,7 +103,7 @@ HISTFILESIZE=2000000
 export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
 # bashmarks
-source /home/fabio/dotfiles/bashmarks/bashmarks.sh
+source /home/fabio/src/dotfiles/bashmarks/bashmarks.sh
 
 # github
 alias gist="/home/fabio/src/gist/gist"
