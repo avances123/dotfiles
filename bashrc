@@ -97,13 +97,22 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 # Bash history management
-shopt -s histappend
 HISTSIZE=2000000
 HISTFILESIZE=2000000
-export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+shopt -s histappend
+if [ -n "$PROMPT_COMMAND" ]; then
+    export PROMPT_COMMAND="${PROMPT_COMMAND};  history -a; history -n"
+else
+    export PROMPT_COMMAND='history -a; history -n'
+fi
 
 # bashmarks
 source /home/fabio/src/dotfiles/bashmarks/bashmarks.sh
 
 # github
-alias gist="/home/fabio/src/gist/gist"
+#alias gist="/home/fabio/src/gist/gist"
+export GITHUB_USER=$(cat $HOME/.github/GITHUB_USER)
+export GITHUB_PASSWORD=$(cat $HOME/.github/GITHUB_PASSWORD)
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -s "/home/fabio/.rvm/scripts/rvm" ]] && source "/home/fabio/.rvm/scripts/rvm"

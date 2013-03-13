@@ -1,0 +1,1 @@
+host -t a $1 | awk '{print $4}' | egrep ^[1-9]
