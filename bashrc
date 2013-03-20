@@ -96,6 +96,18 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+
+# http://thomashunter.name/blog/git-colored-output-shortcut-commands-autocompletion-and-bash-prompt/
+if [ -f ~/src/dotfiles/lib/git-completion.bash ]; then
+	. ~/src/dotfiles/lib/git-completion.bash
+fi
+green=$(tput setaf 2)
+blue=$(tput setaf 4)
+bold=$(tput bold)
+red=$(tput setaf 1)
+reset=$(tput sgr0)
+PS1='\u@\[$green\]\h\[$reset\]:\w\[$blue\]$(__git_ps1)\[$reset\] \$ '
+
 # Bash history management
 HISTSIZE=2000000
 HISTFILESIZE=2000000
