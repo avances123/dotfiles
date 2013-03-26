@@ -96,6 +96,18 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+
+# http://thomashunter.name/blog/git-colored-output-shortcut-commands-autocompletion-and-bash-prompt/
+if [ -f ~/src/dotfiles/lib/git-completion.bash ]; then
+	. ~/src/dotfiles/lib/git-completion.bash
+fi
+green=$(tput setaf 2)
+blue=$(tput setaf 4)
+bold=$(tput bold)
+red=$(tput setaf 1)
+reset=$(tput sgr0)
+PS1='\u@\[$green\]\h\[$reset\]:\w\[$blue\]$(__git_ps1)\[$reset\] \$ '
+
 # Bash history management
 HISTSIZE=2000000
 HISTFILESIZE=2000000
@@ -107,10 +119,23 @@ else
 fi
 
 # bashmarks
-source /home/fabio/dotfiles/bashmarks/bashmarks.sh
+source /home/fabio/src/dotfiles/bashmarks/bashmarks.sh
+
+export EC2_PRIVATE_KEY=$HOME/.aws/pk-EHLOERH4WJ54Y546X2VJKSUPQ6YG4XF2.pem
+export EC2_CERT=$HOME/.aws/cert-EHLOERH4WJ54Y546X2VJKSUPQ6YG4XF2.pem
+export EC2_KEYPAIR=20130123
+export AWS_CREDENTIAL_FILE=$HOME/.aws/aws-credential-file.txt
+export EC2_URL=https://ec2.eu-west-1.amazonaws.com
+
+# launchpad
+export DEBFULLNAME="Fabio Rueda"
+export DEBEMAIL="avances123@gmail.com"
+
 
 # github
-alias gist="/home/fabio/src/gist/gist"
+#alias gist="/home/fabio/src/gist/gist"
+export GITHUB_USER=$(cat $HOME/.github/GITHUB_USER)
+export GITHUB_PASSWORD=$(cat $HOME/.github/GITHUB_PASSWORD)
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "/home/fabio/.rvm/scripts/rvm" ]] && source "/home/fabio/.rvm/scripts/rvm"
