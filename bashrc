@@ -140,9 +140,3 @@ export GITHUB_PASSWORD=$(cat $HOME/.github/GITHUB_PASSWORD)
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "/home/fabio/.rvm/scripts/rvm" ]] && source "/home/fabio/.rvm/scripts/rvm"
 
-export EC2_PRIVATE_KEY=$HOME/.aws/pk-EHLOERH4WJ54Y546X2VJKSUPQ6YG4XF2.pem
-export EC2_CERT=$HOME/.aws/cert-EHLOERH4WJ54Y546X2VJKSUPQ6YG4XF2.pem
-export EC2_KEYPAIR=20130123
-export AWS_CREDENTIAL_FILE=$HOME/.aws/aws-credential-file.txt
-export EC2_URL=https://ec2.eu-west-1.amazonaws.com
-
