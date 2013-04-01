@@ -128,7 +128,7 @@ export AWS_CREDENTIAL_FILE=$HOME/.aws/aws-credential-file.txt
 export EC2_URL=https://ec2.eu-west-1.amazonaws.com
 
 # launchpad
-export DEBFULLNAME="Fabio Rueda"
+export DEBFULLNAME="Fabio Rueda (vizzuality)"
 export DEBEMAIL="avances123@gmail.com"
 
 
