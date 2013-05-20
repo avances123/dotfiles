@@ -137,6 +137,6 @@ export DEBEMAIL="avances123@gmail.com"
 export GITHUB_USER=$(cat $HOME/.github/GITHUB_USER)
 export GITHUB_PASSWORD=$(cat $HOME/.github/GITHUB_PASSWORD)
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=/home/fabio/src/dotfiles/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "/home/fabio/.rvm/scripts/rvm" ]] && source "/home/fabio/.rvm/scripts/rvm"
 
