@@ -1,0 +1,136 @@
+# Vim 7.3 generó este archivo "viminfo".
+# Puede editarlo, ¡sólo si tiene cuidado!
+
+# Valor de 'encoding' cuando se escribió este archivo
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# Último Patrón de búsqueda:
+~MSle0~/\vvim-po
+
+# Última cadena de sustitución:
+$
+
+# Historia de Línea de órdenes (de lo más nuevo a lo más antiguo):
+:q!
+:wq
+:s
+:q
+
+# Historia de Cadena de búsqueda (de lo más nuevo a lo más antiguo):
+? \s\+$
+?/\vvim-po
+
+# Historia de Expresión (de lo más nuevo a lo más antiguo):
+
+# Historia de Línea de entrada (de lo más nuevo a lo más antiguo):
+
+# Historia de Línea de entrada (de lo más nuevo a lo más antiguo):
+
+# Registros:
+""1	LINE	0
+	so ~/.vim/config/vim-powerline.vimrc
+"r	CHAR	0
+	/def V%zf
+
+# Marcas en el archivo:
+'0  184  0  ~/src/dotfiles/vim/vimrc
+'1  7  35  ~/src/dotfiles/instala-dotfiles.sh
+'2  184  0  ~/.vimrc
+
+# Lista de saltos (el más reciente va primero):
+-'  184  0  ~/src/dotfiles/vim/vimrc
+-'  153  17  ~/src/dotfiles/vim/vimrc
+-'  1  0  ~/src/dotfiles/vim/vimrc
+-'  7  35  ~/src/dotfiles/instala-dotfiles.sh
+-'  6  0  ~/src/dotfiles/instala-dotfiles.sh
+-'  1  0  ~/src/dotfiles/instala-dotfiles.sh
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  7  35  ~/src/dotfiles/instala-dotfiles.sh
+-'  6  0  ~/src/dotfiles/instala-dotfiles.sh
+-'  1  0  ~/src/dotfiles/instala-dotfiles.sh
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  184  0  ~/src/dotfiles/vim/vimrc
+-'  153  17  ~/src/dotfiles/vim/vimrc
+-'  1  0  ~/src/dotfiles/vim/vimrc
+-'  7  35  ~/src/dotfiles/instala-dotfiles.sh
+-'  6  0  ~/src/dotfiles/instala-dotfiles.sh
+-'  1  0  ~/src/dotfiles/instala-dotfiles.sh
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  7  35  ~/src/dotfiles/instala-dotfiles.sh
+-'  6  0  ~/src/dotfiles/instala-dotfiles.sh
+-'  1  0  ~/src/dotfiles/instala-dotfiles.sh
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+
+# Historia de las marcas en los archivos (de la más reciente a la más antigua):
+
+> ~/src/dotfiles/vim/vimrc
+	"	184	0
+	^	184	1
+	.	184	0
+	+	184	0
+
+> ~/src/dotfiles/instala-dotfiles.sh
+	"	7	35
+	^	7	36
+	.	7	35
+	+	6	0
+	+	6	47
+	+	7	35
+
+> ~/.vimrc
+	"	184	0
+	^	184	0
+	.	184	0
+	+	184	0
+
+> ~/src/dotfiles/vim/[Vundle] Installer
+	"	1	0
+	.	1	0
+	+	1	0
