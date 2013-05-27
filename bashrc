@@ -136,6 +136,8 @@ export DEBEMAIL="avances123@gmail.com"
 #alias gist="/home/fabio/src/gist/gist"
 export GITHUB_USER=$(cat $HOME/.github/GITHUB_USER)
 export GITHUB_PASSWORD=$(cat $HOME/.github/GITHUB_PASSWORD)
+export EDITOR='vim'
+
 
 PATH=/home/fabio/src/dotfiles/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "/home/fabio/.rvm/scripts/rvm" ]] && source "/home/fabio/.rvm/scripts/rvm"
