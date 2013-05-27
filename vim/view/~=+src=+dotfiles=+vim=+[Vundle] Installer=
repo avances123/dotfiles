@@ -1,13 +1,23 @@
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 argglobal
+xnoremap <buffer> <silent> ,a| `>a|`<i|
+xnoremap <buffer> <silent> ,a{ `>a}`<i{
+xnoremap <buffer> <silent> ,a} `>a}`<i{
+xnoremap <buffer> <silent> ,a#{ `>a}`<i#{
+xnoremap <buffer> <silent> ,a) `>a)`<i(
+xnoremap <buffer> <silent> ,a( `>a)`<i(
+xnoremap <buffer> <silent> ,a' `>a'`<i'
+xnoremap <buffer> <silent> ,a] `>a]`<i[
+xnoremap <buffer> <silent> ,a[ `>a]`<i[
+xnoremap <buffer> <silent> ,a" `>a"`<i"
 noremap <buffer> <silent> <C-D-CR> :call Toggle_task_status()
 nnoremap <buffer> ? :norm h
 nnoremap <buffer> C :BundleClean!
 nnoremap <buffer> D :exec 'Delete'.getline('.')
 nnoremap <buffer> I :exec 'InstallAndRequire'.substitute(getline('.'), '^Bundle ', 'Bundle! ', '')
 nnoremap <buffer> R :call vundle#scripts#reload()
-nnoremap <buffer> add! :exec 'Install'.substitute(getline('.'), '^Bundle ', 'Bundle! ', '')
 nnoremap <buffer> add :exec 'Install'.getline('.')
+nnoremap <buffer> add! :exec 'Install'.substitute(getline('.'), '^Bundle ', 'Bundle! ', '')
 nnoremap <buffer> c :BundleClean
 nnoremap <buffer> h :h vundle
 nnoremap <buffer> i :exec 'InstallAndRequire'.getline('.')

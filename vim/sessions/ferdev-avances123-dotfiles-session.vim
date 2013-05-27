@@ -1,6 +1,6 @@
 " ~/src/dotfiles/vim/sessions/ferdev-avances123-dotfiles-session.vim:
 " Vim session script.
-" Created by session.vim 2.3.9 on 27 mayo 2013 at 18:20:07.
+" Created by session.vim 2.3.9 on 27 mayo 2013 at 18:51:30.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=
@@ -9,9 +9,10 @@ if exists('g:syntax_on') != 1 | syntax on | endif
 if exists('g:did_load_filetypes') != 1 | filetype on | endif
 if exists('g:did_load_ftplugin') != 1 | filetype plugin on | endif
 if exists('g:did_indent_on') != 1 | filetype indent on | endif
-if &background != 'dark'
-	set background=dark
+if &background != 'light'
+	set background=light
 endif
+if !exists('g:colors_name') || g:colors_name != 'molokai' | colorscheme molokai | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -23,10 +24,10 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +184 ~/.vimrc
+badd +153 vimrc
 badd +0 \[Vundle]\ Installer
-" args ~/.vimrc
-edit ~/.vimrc
+" args vimrc
+edit vimrc
 set splitbelow splitright
 wincmd t
 set winheight=1 winwidth=1
@@ -40,11 +41,11 @@ setlocal fml=1
 setlocal fdn=2
 setlocal fen
 silent! normal! zE
-let s:l = 184 - ((50 * winheight(0) + 25) / 51)
+let s:l = 1 - ((0 * winheight(0) + 25) / 51)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-184
+1
 normal! 0
 tabnext 1
 if exists('s:wipebuf')

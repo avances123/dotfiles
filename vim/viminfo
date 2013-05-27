@@ -8,19 +8,25 @@
 # hlsearch on (H) or off (h):
 ~h
 # Último Patrón de búsqueda:
-~MSle0~/\vvim-po
+~MSle0~/\vpower
 
 # Última cadena de sustitución:
 $
 
 # Historia de Línea de órdenes (de lo más nuevo a lo más antiguo):
 :q!
-:wq
-:s
 :q
+:w
+:wq
+:6
+:q!"
+:s
 
 # Historia de Cadena de búsqueda (de lo más nuevo a lo más antiguo):
+?/\vpower
 ? \s\+$
+?/\vpowerl
+?/\veasy
 ?/\vvim-po
 
 # Historia de Expresión (de lo más nuevo a lo más antiguo):
@@ -30,53 +36,47 @@ $
 # Historia de Línea de entrada (de lo más nuevo a lo más antiguo):
 
 # Registros:
-""1	LINE	0
+"1	LINE	0
 	so ~/.vim/config/vim-powerline.vimrc
 "r	CHAR	0
 	/def V%zf
+""-	CHAR	0
+	"
 
 # Marcas en el archivo:
-'0  184  0  ~/src/dotfiles/vim/vimrc
-'1  7  35  ~/src/dotfiles/instala-dotfiles.sh
-'2  184  0  ~/.vimrc
+'0  51  0  ~/src/dotfiles/vim/vimrc
+'1  1  0  ~/src/dotfiles/vim/vimrc
+'2  184  22  ~/src/dotfiles/vim/vimrc
+'3  193  1  ~/src/dotfiles/vim/vimrc
+'4  1  0  ~/src/dotfiles/vim/viminfo
+'5  246  1  ~/src/dotfiles/lib/git-completion.bash
+'6  160  0  ~/src/dotfiles/vim/vimrc
+'7  7  0  ~/src/dotfiles/vim/bundle/vim-easytags/plugin/easytags.vim
+'8  38  0  ~/src/dotfiles/vim/bundle/vim-easytags/plugin/easytags.vim
+'9  92  1  ~/src/truequing/truequing/fabfile.py
 
 # Lista de saltos (el más reciente va primero):
--'  184  0  ~/src/dotfiles/vim/vimrc
--'  153  17  ~/src/dotfiles/vim/vimrc
+-'  51  0  ~/src/dotfiles/vim/vimrc
 -'  1  0  ~/src/dotfiles/vim/vimrc
--'  7  35  ~/src/dotfiles/instala-dotfiles.sh
--'  6  0  ~/src/dotfiles/instala-dotfiles.sh
--'  1  0  ~/src/dotfiles/instala-dotfiles.sh
--'  184  0  ~/.vimrc
--'  153  17  ~/.vimrc
--'  1  0  ~/.vimrc
--'  184  0  ~/.vimrc
--'  153  17  ~/.vimrc
--'  1  0  ~/.vimrc
--'  184  0  ~/.vimrc
--'  153  17  ~/.vimrc
--'  1  0  ~/.vimrc
--'  184  0  ~/.vimrc
--'  153  17  ~/.vimrc
--'  1  0  ~/.vimrc
--'  7  35  ~/src/dotfiles/instala-dotfiles.sh
--'  6  0  ~/src/dotfiles/instala-dotfiles.sh
--'  1  0  ~/src/dotfiles/instala-dotfiles.sh
--'  184  0  ~/.vimrc
--'  153  17  ~/.vimrc
--'  1  0  ~/.vimrc
--'  184  0  ~/.vimrc
--'  153  17  ~/.vimrc
--'  1  0  ~/.vimrc
--'  184  0  ~/.vimrc
--'  153  17  ~/.vimrc
--'  1  0  ~/.vimrc
--'  184  0  ~/.vimrc
--'  153  17  ~/.vimrc
--'  1  0  ~/.vimrc
--'  184  0  ~/src/dotfiles/vim/vimrc
+-'  184  22  ~/src/dotfiles/vim/vimrc
 -'  153  17  ~/src/dotfiles/vim/vimrc
--'  1  0  ~/src/dotfiles/vim/vimrc
+-'  197  0  ~/src/dotfiles/vim/vimrc
+-'  172  0  ~/src/dotfiles/vim/vimrc
+-'  2  0  ~/src/dotfiles/vim/vimrc
+-'  193  1  ~/src/dotfiles/vim/vimrc
+-'  160  0  ~/src/dotfiles/vim/vimrc
+-'  1  0  ~/src/dotfiles/vim/viminfo
+-'  246  1  ~/src/dotfiles/lib/git-completion.bash
+-'  1  0  ~/src/dotfiles/lib/git-completion.bash
+-'  194  0  ~/src/dotfiles/vim/vimrc
+-'  7  0  ~/src/dotfiles/vim/bundle/vim-easytags/plugin/easytags.vim
+-'  38  0  ~/src/dotfiles/vim/bundle/vim-easytags/plugin/easytags.vim
+-'  92  1  ~/src/truequing/truequing/fabfile.py
+-'  1  0  ~/src/truequing/truequing/fabfile.py
+-'  34  2  ~/src/dotfiles/vim/bundle/vim-easytags/plugin/easytags.vim
+-'  1  0  ~/src/dotfiles/vim/bundle/vim-easytags/plugin/easytags.vim
+-'  1  0  ~/src/dotfiles/vim/config/colors.vimrc
+-'  1  0  ~/src/dotfiles/vim/config/colors.vimrc:
 -'  7  35  ~/src/dotfiles/instala-dotfiles.sh
 -'  6  0  ~/src/dotfiles/instala-dotfiles.sh
 -'  1  0  ~/src/dotfiles/instala-dotfiles.sh
@@ -107,14 +107,88 @@ $
 -'  184  0  ~/.vimrc
 -'  153  17  ~/.vimrc
 -'  1  0  ~/.vimrc
+-'  7  35  ~/src/dotfiles/instala-dotfiles.sh
+-'  6  0  ~/src/dotfiles/instala-dotfiles.sh
+-'  1  0  ~/src/dotfiles/instala-dotfiles.sh
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  7  35  ~/src/dotfiles/instala-dotfiles.sh
+-'  6  0  ~/src/dotfiles/instala-dotfiles.sh
+-'  1  0  ~/src/dotfiles/instala-dotfiles.sh
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  7  35  ~/src/dotfiles/instala-dotfiles.sh
+-'  6  0  ~/src/dotfiles/instala-dotfiles.sh
+-'  1  0  ~/src/dotfiles/instala-dotfiles.sh
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  184  0  ~/.vimrc
+-'  153  17  ~/.vimrc
 
 # Historia de las marcas en los archivos (de la más reciente a la más antigua):
 
 > ~/src/dotfiles/vim/vimrc
-	"	184	0
-	^	184	1
-	.	184	0
+	"	51	0
+	^	153	17
+	.	153	17
 	+	184	0
+	+	193	0
+	+	160	0
+	+	193	0
+	+	153	17
+
+> ~/src/dotfiles/vim/[Vundle] Installer
+	"	1	0
+	.	1	0
+	+	175	0
+	+	117	0
+	+	59	0
+	+	1	0
+
+> ~/src/dotfiles/vim/viminfo
+	"	1	0
+
+> ~/src/dotfiles/lib/git-completion.bash
+	"	246	1
+
+> ~/src/dotfiles/vim/bundle/vim-easytags/plugin/easytags.vim
+	"	7	0
+
+> ~/src/truequing/truequing/fabfile.py
+	"	92	1
+
+> ~/src/dotfiles/vim/config/colors.vimrc
+	"	1	0
+
+> ~/src/dotfiles/vim/config/colors.vimrc:
+	"	1	0
 
 > ~/src/dotfiles/instala-dotfiles.sh
 	"	7	35
@@ -129,8 +203,3 @@ $
 	^	184	0
 	.	184	0
 	+	184	0
-
-> ~/src/dotfiles/vim/[Vundle] Installer
-	"	1	0
-	.	1	0
-	+	1	0
