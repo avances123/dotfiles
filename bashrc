@@ -120,7 +120,7 @@ else
 fi
 
 # bashmarks
-source /home/fabio/src/dotfiles/bashmarks/bashmarks.sh
+source $HOME/src/dotfiles/bashmarks/bashmarks.sh
 
 export EC2_PRIVATE_KEY=$HOME/.aws/pk-EHLOERH4WJ54Y546X2VJKSUPQ6YG4XF2.pem
 export EC2_CERT=$HOME/.aws/cert-EHLOERH4WJ54Y546X2VJKSUPQ6YG4XF2.pem
