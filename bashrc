@@ -128,10 +128,6 @@ export EC2_KEYPAIR=20130123
 export AWS_CREDENTIAL_FILE=$HOME/.aws/aws-credential-file.txt
 export EC2_URL=https://ec2.eu-west-1.amazonaws.com
 
-# launchpad
-export DEBFULLNAME="Fabio Rueda (vizzuality)"
-export DEBEMAIL="avances123@gmail.com"
-
 
 # github
 #alias gist="/home/fabio/src/gist/gist"
@@ -143,3 +139,7 @@ export EDITOR='vim'
 PATH=/home/fabio/src/dotfiles/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "/home/fabio/.rvm/scripts/rvm" ]] && source "/home/fabio/.rvm/scripts/rvm"
 
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/src
+source /usr/local/bin/virtualenvwrapper.sh
