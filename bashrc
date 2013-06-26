@@ -136,8 +136,8 @@ export GITHUB_PASSWORD=$(cat $HOME/.github/GITHUB_PASSWORD)
 export EDITOR='vim'
 
 
-PATH=/home/fabio/src/dotfiles/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s "/home/fabio/.rvm/scripts/rvm" ]] && source "/home/fabio/.rvm/scripts/rvm"
+PATH=$HOME/src/dotfiles/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 
 export WORKON_HOME=$HOME/.virtualenvs
