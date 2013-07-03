@@ -7,7 +7,8 @@ import os
 # Musica Antigua: 23353
 # Grandes ciclos: 1984
 
-a = feedparser.parse("http://www.rtve.es/api/programas/1984/audios.rss")
+#a = feedparser.parse("http://www.rtve.es/api/programas/1984/audios.rss")
+a = feedparser.parse("http://www.rtve.es/api/programas/23353/audios.rss")
 for e in a.entries:
     filename = e.title_detail.value + '.mp3'
     filename = filename.replace("/","-")

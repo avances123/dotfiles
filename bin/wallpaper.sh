@@ -8,6 +8,7 @@ curl -s $URL > $ZIP
 IMG=$(unzip -l desktop-bg.zip  | awk '/-----/ {p = ++p % 2; next} p {print $NF}' | head -n 1)
 unzip -o 'desktop-bg.zip'
 # TODO recuperar el tamaño de la imagen y quitar la ultima banda de 25 pix de alto
-convert $IMG -crop 1300x775+0+0 escritorio.jpg
-gsettings set org.gnome.desktop.background picture-uri "file:///tmp/escritorio.jpg"
+#convert $IMG -crop 1300x775+0+0 ~/escritorio.jpg
+convert $IMG -crop 1680x1050+0+0 ~/escritorio.jpg
+gsettings set org.gnome.desktop.background picture-uri "file:///home/fabio/escritorio.jpg"
 echo `date` $IMG
