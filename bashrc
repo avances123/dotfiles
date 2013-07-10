@@ -142,3 +142,6 @@ PATH=$HOME/src/dotfiles/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/src
+# Added by install script for node.js and npm in 30s
+export PATH=$HOME/local/bin:$PATH
+export NODE_PATH=$HOME/local/lib/node_modules
