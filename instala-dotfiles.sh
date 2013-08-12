@@ -4,3 +4,6 @@ rm -rf $HOME/.vim
 ln -s $HOME/src/dotfiles/vim $HOME/.vim
 rm -f $HOME/.vimrc
 ln -s $HOME/src/dotfiles/vim/vimrc $HOME/.vimrc
+rm -f $HOME/.gitconfig
+ln -s $HOME/src/dotfiles/gitconfig $HOME/.gitconfig
+
