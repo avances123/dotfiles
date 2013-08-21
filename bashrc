@@ -110,14 +110,10 @@ reset=$(tput sgr0)
 PS1='\u@\[$green\]\h\[$reset\]:\w\[$blue\]$(__git_ps1)\[$reset\] \$ '
 
 # Bash history management
-HISTSIZE=2000000
-HISTFILESIZE=2000000
 shopt -s histappend
-if [ -n "$PROMPT_COMMAND" ]; then
-    export PROMPT_COMMAND="${PROMPT_COMMAND};  history -a; history -n"
-else
-    export PROMPT_COMMAND='history -a; history -n'
-fi
+HISTSIZE=20000
+HISTFILESIZE=2000000
+
 
 # bashmarks
 source $HOME/src/dotfiles/bashmarks/bashmarks.sh
