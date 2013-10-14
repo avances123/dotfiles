@@ -141,3 +141,5 @@ export PROJECT_HOME=$HOME/src
 # Added by install script for node.js and npm in 30s
 export PATH=$HOME/local/bin:$PATH
 export NODE_PATH=$HOME/local/lib/node_modules
+
+
