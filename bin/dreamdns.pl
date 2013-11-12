@@ -1,4 +1,10 @@
 #!/usr/bin/perl -w
+#
+# Linea para el rc.local 
+# perl dreamdns.pl --domain casa.avances123.com --username userlogin@gmail.com --apikey XXXXXXXXXXXXXXX --verbosity 5 --daemon
+#
+#
+#
 # Name: DreamDNS updater
 # Description: This is a script to update your dreamhost dns, to match
 # your local IP. It works much like other dynamic dns services.
