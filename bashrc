@@ -141,3 +141,11 @@ export PROJECT_HOME=$HOME/src
 # Added by install script for node.js and npm in 30s
 export PATH=$HOME/local/bin:$PATH
 export NODE_PATH=$HOME/local/lib/node_modules
+
+
+
+export PATH=/usr/local/cuda-5.5/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-5.5/lib64:$LD_LIBRARY_PATH
+# Added by install script for node.js and npm in 30s
+export PATH=$HOME/local/bin:$PATH
+export NODE_PATH=$HOME/local/lib/node_modules
