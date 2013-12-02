@@ -11,4 +11,4 @@ unzip -o 'desktop-bg.zip' 2>/dev/null 1>&2
 #convert $IMG -crop 1300x775+0+0 ~/escritorio.jpg
 convert $IMG -crop 1680x1050+0+0 ~/escritorio.jpg
 gsettings set org.gnome.desktop.background picture-uri "file:///home/fabio/escritorio.jpg" 2>/dev/null
-echo `date` $IMG
+#echo `date` $IMG
