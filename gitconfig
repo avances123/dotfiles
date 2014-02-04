@@ -19,6 +19,7 @@
 [alias]
 	lg = log --oneline
 	st = status
+	ci = commit
 
 [giggle]
 	main-window-maximized = true

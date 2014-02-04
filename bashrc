@@ -142,3 +142,6 @@ export LD_LIBRARY_PATH=/usr/local/cuda-5.5/lib64:$LD_LIBRARY_PATH
 # Added by install script for node.js and npm in 30s
 export PATH=$HOME/local/bin:$PATH
 export NODE_PATH=$HOME/local/lib/node_modules
+
+# The next line updates PATH for the Google Cloud SDK.
+export PATH=/home/fabio/google-cloud-sdk/bin:$PATH
