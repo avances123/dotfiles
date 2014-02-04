@@ -127,8 +127,6 @@ export EC2_URL=https://ec2.eu-west-1.amazonaws.com
 
 # github
 #alias gist="/home/fabio/src/gist/gist"
-export GITHUB_USER=$(cat $HOME/.github/GITHUB_USER)
-export GITHUB_PASSWORD=$(cat $HOME/.github/GITHUB_PASSWORD)
 export EDITOR='vim'
 
 
