@@ -97,6 +97,11 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+if [ -f ~/src/dotfiles/lib/git-prompt.sh ]; then
+	. ~/src/dotfiles/lib/git-prompt.sh
+fi
+
+
 
 # http://thomashunter.name/blog/git-colored-output-shortcut-commands-autocompletion-and-bash-prompt/
 if [ -f ~/src/dotfiles/lib/git-completion.bash ]; then
@@ -135,6 +140,9 @@ export EDITOR='vim'
 PATH=$HOME/src/dotfiles/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+if [ -f /usr/bin/virtualenvwrapper.sh ]; then
+    . /usr/bin/virtualenvwrapper.sh
+fi
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/src
