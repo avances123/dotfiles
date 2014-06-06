@@ -97,6 +97,11 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+if [ -f ~/src/dotfiles/lib/git-prompt.sh ]; then
+	. ~/src/dotfiles/lib/git-prompt.sh
+fi
+
+
 
 # http://thomashunter.name/blog/git-colored-output-shortcut-commands-autocompletion-and-bash-prompt/
 if [ -f ~/src/dotfiles/lib/git-completion.bash ]; then
@@ -113,31 +118,49 @@ PS1='\u@\[$green\]\h\[$reset\]:\w\[$blue\]$(__git_ps1)\[$reset\] \$ '
 shopt -s histappend
 HISTSIZE=20000
 HISTFILESIZE=2000000
+export PROMPT_COMMAND='history -a'
 
-
-# bashmarks
 source $HOME/src/dotfiles/bashmarks/bashmarks.sh
 
-export EC2_PRIVATE_KEY=$HOME/.aws/pk-EHLOERH4WJ54Y546X2VJKSUPQ6YG4XF2.pem
-export EC2_CERT=$HOME/.aws/cert-EHLOERH4WJ54Y546X2VJKSUPQ6YG4XF2.pem
-export EC2_KEYPAIR=20130123
-export AWS_CREDENTIAL_FILE=$HOME/.aws/aws-credential-file.txt
-export EC2_URL=https://ec2.eu-west-1.amazonaws.com
+
 
 
 # github
+
 #alias gist="/home/fabio/src/gist/gist"
-export GITHUB_USER=$(cat $HOME/.github/GITHUB_USER)
-export GITHUB_PASSWORD=$(cat $HOME/.github/GITHUB_PASSWORD)
 export EDITOR='vim'
 
+
+
+
+# rvm
 
 PATH=$HOME/src/dotfiles/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 
+
+
+
+# virtualenvs
+
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+    . /usr/local/bin/virtualenvwrapper.sh
+fi
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/src
+
+
+
+
+
+
+
+
+
+
+
+
 
 export PATH=/usr/local/cuda-5.5/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda-5.5/lib64:$LD_LIBRARY_PATH
