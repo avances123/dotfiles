@@ -1,3 +1,3 @@
 #!/bin/bash
 date=$(date +%Y%m%d%H%M%S)
-avconv -f alsa -i default -b 64k -f x11grab -r 30 -s 1366x768 -i :0.0 -vcodec libx264  -threads 4 -y /tmp/screencast-${date}.mp4
+avconv -f alsa -i default -b 64k -f x11grab -r 30 -s 1680x1050 -i :0.0 -vcodec libx264  -threads 4 -y /tmp/screencast-${date}.mp4
