@@ -170,3 +170,8 @@ export NODE_PATH=$HOME/local/lib/node_modules
 
 # The next line updates PATH for the Google Cloud SDK.
 export PATH=/home/fabio/google-cloud-sdk/bin:$PATH
+
+
+# android
+export PATH=/home/fabio/adt-bundle-linux-x86_64-20140321/sdk/platform-tools:/home/fabio/adt-bundle-linux-x86_64-20140321/sdk/tools:$PATH
+export MSF_DATABASE_CONFIG=/usr/local/share/metasploit-framework/database.yml
