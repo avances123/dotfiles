@@ -20,6 +20,7 @@
 	lg = log --oneline
 	st = status
 	ci = commit
+	tg = tag -l -n1
 [giggle]
 	main-window-maximized = true
 	main-window-geometry = 0x0+0+0
