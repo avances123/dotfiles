@@ -21,6 +21,7 @@
 	st = status
 	ci = commit
 	tg = tag -l -n1
+	tree = log --all --graph --decorate --oneline --simplify-by-decoration
 [giggle]
 	main-window-maximized = true
 	main-window-geometry = 0x0+0+0
