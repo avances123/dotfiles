@@ -171,12 +171,14 @@ export PATH=$HOME/local/bin:$PATH
 export NODE_PATH=$HOME/local/lib/node_modules
 
 
-# android
-export PATH=/home/fabio/adt-bundle-linux-x86_64-20140321/sdk/platform-tools:/home/fabio/adt-bundle-linux-x86_64-20140321/sdk/tools:$PATH
+# android http://dl.google.com/android/android-sdk_r23.0.2-linux.tgz
+export PATH=/home/fabio/android-sdk-linux:$PATH
+
+#metasploit
 export MSF_DATABASE_CONFIG=/usr/local/share/metasploit-framework/database.yml
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/home/fabio/google-cloud-sdk/path.bash.inc'
+#source '/home/fabio/google-cloud-sdk/path.bash.inc'
 
 # The next line enables bash completion for gcloud.
-source '/home/fabio/google-cloud-sdk/completion.bash.inc'
+#source '/home/fabio/google-cloud-sdk/completion.bash.inc'
