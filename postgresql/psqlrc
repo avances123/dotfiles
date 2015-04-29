@@ -6,4 +6,4 @@
 
 
 -- Don't exit with ctrl-d unless you press it 3 times
-\set IGNOREEOF 3
+--\set IGNOREEOF 3
