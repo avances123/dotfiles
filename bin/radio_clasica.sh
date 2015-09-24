@@ -1,1 +1,0 @@
-cvlc http://radioclasica.rtve.stream.flumotion.com/rtve/radioclasica.mp3.m3u &
