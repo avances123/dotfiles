@@ -1,6 +1,6 @@
 set nocompatible
 call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 let mapleader=","
 set hidden
 syntax on
