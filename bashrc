@@ -137,8 +137,8 @@ export EDITOR='vim'
 
 # rvm
 
-PATH=$HOME/src/dotfiles/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+#PATH=$HOME/src/dotfiles/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 
 
@@ -164,21 +164,7 @@ export PROJECT_HOME=$HOME/src
 
 
 
-export PATH=/usr/local/cuda-5.5/bin:$PATH
-export LD_LIBRARY_PATH=/usr/local/cuda-5.5/lib64:$LD_LIBRARY_PATH
-# Added by install script for node.js and npm in 30s
-export PATH=$HOME/local/bin:$PATH
-export NODE_PATH=$HOME/local/lib/node_modules
-
 
 # android http://dl.google.com/android/android-sdk_r23.0.2-linux.tgz
 export PATH=/home/fabio/android-sdk-linux:$PATH
 
-#metasploit
-export MSF_DATABASE_CONFIG=/usr/local/share/metasploit-framework/database.yml
-
-# The next line updates PATH for the Google Cloud SDK.
-#source '/home/fabio/google-cloud-sdk/path.bash.inc'
-
-# The next line enables bash completion for gcloud.
-#source '/home/fabio/google-cloud-sdk/completion.bash.inc'
