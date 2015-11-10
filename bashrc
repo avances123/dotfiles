@@ -122,7 +122,10 @@ HISTSIZE=20000
 HISTFILESIZE=2000000
 export PROMPT_COMMAND='history -a'
 
-source $HOME/src/dotfiles/bashmarks/bashmarks.sh
+
+if [ -f /usr/share/bashmarks/bashmarks.sh ]; then
+	source /usr/share/bashmarks/bashmarks.sh
+fi
 
 
 
