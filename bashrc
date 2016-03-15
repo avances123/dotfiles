@@ -123,8 +123,9 @@ HISTFILESIZE=2000000
 export PROMPT_COMMAND='history -a'
 
 
-if [ -f /usr/share/bashmarks/bashmarks.sh ]; then
-	source /usr/share/bashmarks/bashmarks.sh
+
+if [ -f /usr/share/cdargs/cdargs-bash.sh ]; then
+	source /usr/share/cdargs/cdargs-bash.sh
 fi
 
 
