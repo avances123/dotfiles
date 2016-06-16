@@ -140,15 +140,8 @@ fi
 export EDITOR='vim'
 
 
-
-
-# rvm
-
-#PATH=$HOME/src/dotfiles/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-
-
+# https://wiki.archlinux.org/index.php/SSH_keys_(Espa%C3%B1ol)#Recuerde_la_frase-de-paso
+eval `keychain -Q -q --eval --agents ssh id_rsa`
 
 
 # virtualenvs
@@ -164,4 +157,6 @@ export PROJECT_HOME=$HOME/src
 
 # android http://dl.google.com/android/android-sdk_r23.0.2-linux.tgz
 export PATH=/home/fabio/android-sdk-linux:$PATH
+
+
 
