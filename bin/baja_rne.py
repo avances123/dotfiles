@@ -1,6 +1,6 @@
 #!/usr/bin/python
 import feedparser
-import urllib2
+import urllib.request, urllib.error, urllib.parse
 import os
 
 
@@ -15,11 +15,11 @@ for e in a.entries:
     if not os.path.exists(filename):
         for link in e.links:
             if link.type == 'audio/mpeg':
-                print "[%s -- %s]" % (e.title_detail.value,link.href)
-                response = urllib2.urlopen(link.href)
+                print("[%s -- %s]" % (e.title_detail.value,link.href))
+                response = urllib.request.urlopen(link.href)
                 localfile = open(filename, 'w')
                 localfile.write(response.read())
-                print "Escribiendo %s ..." % filename
+                print("Escribiendo %s ..." % filename)
                 localfile.close()
     else:
-        print "Omitiendo %s porque ya existe" % filename
+        print("Omitiendo %s porque ya existe" % filename)
