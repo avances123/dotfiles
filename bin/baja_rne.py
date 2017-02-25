@@ -17,7 +17,7 @@ for e in a.entries:
             if link.type == 'audio/mpeg':
                 print("[%s -- %s]" % (e.title_detail.value,link.href))
                 response = urllib.request.urlopen(link.href)
-                localfile = open(filename, 'w')
+                localfile = open(filename, 'wb')
                 localfile.write(response.read())
                 print("Escribiendo %s ..." % filename)
                 localfile.close()
