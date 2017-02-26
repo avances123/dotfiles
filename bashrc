@@ -161,8 +161,8 @@ export PROJECT_HOME=$HOME/src
 
 
 
-
-
+# FASD
+eval "$(fasd --init auto)"
 
 
 
