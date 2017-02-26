@@ -122,7 +122,8 @@ eval "`dircolors -b $DIR_COLORS`"
 
 # PROMPT
 green=$(tput setaf 2)
-cyan=$(tput setaf 5)
+cyan=$(tput setaf 6)
+magenta=$(tput setaf 5)
 blue=$(tput setaf 4)
 bold=$(tput bold)
 red=$(tput setaf 1)
@@ -135,6 +136,10 @@ case $hostname in
 	fa-work)
 		export PS1='\u@\[$green\]\h\[$reset\]:\w\[$blue\]$(__git_ps1)\[$reset\] \$ '
 	;;
+	fa-laptop)
+		export PS1='\u@\[$magenta\]\h\[$reset\]:\w\[$blue\]$(__git_ps1)\[$reset\] \$ '
+	;;
+
 esac
 
 
