@@ -116,24 +116,6 @@ export PROJECT_HOME=$HOME/src
 eval "$(fasd --init auto)"
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # android http://dl.google.com/android/android-sdk_r23.0.2-linux.tgz
 export PATH=/home/fabio/android-sdk-linux:$PATH
 
