@@ -116,5 +116,6 @@ export PROJECT_HOME=$HOME/src
 # android http://dl.google.com/android/android-sdk_r23.0.2-linux.tgz
 export PATH=/home/fabio/android-sdk-linux:$PATH
 
-
+# https://github.com/nvbn/thefuck
+eval $(thefuck --alias)
 
