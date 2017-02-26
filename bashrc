@@ -18,15 +18,6 @@ shopt -s checkwinsize
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
-export PS1="\[\033[38;5;12m\][\[$(tput sgr0)\]\[\033[38;5;10m\]\u\[$(tput sgr0)\]\[\033[38;5;12m\]@\[$(tput sgr0)\]\[\033[38;5;7m\]\h\[$(tput sgr0)\]\[\033[38;5;12m\]]\[$(tput sgr0)\]\[\033[38;5;15m\]: \[$(tput sgr0)\]\[\033[38;5;7m\]\w\[$(tput sgr0)\]\[\033[38;5;12m\]>\[$(tput sgr0)\]\[\033[38;5;10m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
-
-[ -e "/etc/DIR_COLORS" ] && DIR_COLORS="/etc/DIR_COLORS"
-[ -e "$HOME/.dircolors" ] && DIR_COLORS="$HOME/.dircolors"
-[ -e "$DIR_COLORS" ] || DIR_COLORS=""
-eval "`dircolors -b $DIR_COLORS`"
-
-
-
 # some more ls aliases
 alias ll='ls -lrth'
 alias la='ls -A'
@@ -66,15 +57,15 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-if [ -f ~/src/dotfiles/lib/git-prompt.sh ]; then
-	. ~/src/dotfiles/lib/git-prompt.sh
+if [ -f ~/src/dotfiles/git/git-prompt.sh ]; then
+	. ~/src/dotfiles/git/git-prompt.sh
 fi
 
 
 
 # http://thomashunter.name/blog/git-colored-output-shortcut-commands-autocompletion-and-bash-prompt/
-if [ -f ~/src/dotfiles/lib/git-completion.bash ]; then
-	. ~/src/dotfiles/lib/git-completion.bash
+if [ -f ~/src/dotfiles/git/git-completion.bash ]; then
+	. ~/src/dotfiles/git/git-completion.bash
 fi
 # Bash history management
 shopt -s histappend
@@ -121,4 +112,31 @@ export PATH=/home/fabio/android-sdk-linux:$PATH
 
 # https://github.com/nvbn/thefuck
 eval $(thefuck --alias)
+
+
+
+[ -e "/etc/DIR_COLORS" ] && DIR_COLORS="/etc/DIR_COLORS"
+[ -e "$HOME/.dircolors" ] && DIR_COLORS="$HOME/.dircolors"
+[ -e "$DIR_COLORS" ] || DIR_COLORS=""
+eval "`dircolors -b $DIR_COLORS`"
+
+# PROMPT
+green=$(tput setaf 2)
+cyan=$(tput setaf 5)
+blue=$(tput setaf 4)
+bold=$(tput bold)
+red=$(tput setaf 1)
+reset=$(tput sgr0)
+hostname=$(hostname)
+case $hostname in
+	fa-big)
+		export PS1='\u@\[$cyan\]\h\[$reset\]:\w\[$blue\]$(__git_ps1)\[$reset\] \$ '
+	;;
+	fa-work)
+		export PS1='\u@\[$green\]\h\[$reset\]:\w\[$blue\]$(__git_ps1)\[$reset\] \$ '
+	;;
+esac
+
+
+
 
