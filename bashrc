@@ -133,6 +133,10 @@ case $hostname in
 	fa-big)
 		export PS1='\u@\[$cyan\]\h\[$reset\]:\w\[$blue\]$(__git_ps1)\[$reset\] \$ '
 	;;
+	fa-server)
+		export PS1='\u@\[$red\]\h\[$reset\]:\w\[$blue\]$(__git_ps1)\[$reset\] \$ '
+	;;
+
 	fa-work)
 		export PS1='\u@\[$green\]\h\[$reset\]:\w\[$blue\]$(__git_ps1)\[$reset\] \$ '
 	;;
