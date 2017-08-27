@@ -102,6 +102,11 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/src
 
 
+#NVM
+source /usr/share/nvm/init-nvm.sh
+
+
+
 
 # FASD
 eval "$(fasd --init auto)"
