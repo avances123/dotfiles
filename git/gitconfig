@@ -1,6 +1,7 @@
 [user]
 	name = Fabio Rueda
 	email = avances123@gmail.com
+	signingkey = 9B22A5643813097F89F4261D9CD13F65ABAEFAFA
 
 [github]
 	user = avances123
@@ -36,3 +37,5 @@
 [pager]
 	diff = diff-so-fancy | less --tabs=1,5 -RFX
 	show = diff-so-fancy | less --tabs=1,5 -RFX
+[commit]
+	gpgsign = true
