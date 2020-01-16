@@ -21,7 +21,6 @@ source /usr/share/git/completion/git-prompt.sh
 export WORKON_HOME=~/.virtualenvs
 export PROJECT_HOME=$HOME/src
 source /usr/bin/virtualenvwrapper.sh
-eval "$(pyenv virtualenv-init -)"
 eval "$(pyenv init -)"
 
 
