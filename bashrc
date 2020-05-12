@@ -41,7 +41,7 @@ export NMON=mcdtkn
 eval "$(fasd --init auto)"
 source /usr/share/cdargs/cdargs-bash.sh                                                                                                                                                                                                     
 alias v='f -e vim' # quick opening files with vim
-
+source /usr/share/LS_COLORS/dircolors.sh
 
 # ANDROID
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
@@ -53,6 +53,12 @@ export PATH=$ANDROID_HOME/emulator:$PATH
 
 
 # Configuracion optativa del usuario
-if [ -f ~/.bashrc_custom ]; then
-    . ~/.bashrc_custom
+if [ -f ~/.bashrc_curro ]; then
+    . ~/.bashrc_curro
+fi
+
+### Bashhub.com Installation.
+### This Should be at the EOF. https://bashhub.com/docs
+if [ -f ~/.bashhub/bashhub.sh ]; then
+    source ~/.bashhub/bashhub.sh
 fi
