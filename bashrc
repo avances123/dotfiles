@@ -12,7 +12,7 @@ alias ls='ls --color=auto'
 alias ll='ls -lrtah --color=auto'
 alias grep='grep --color=auto'
 alias "c=xclip" # copy to X clipboard (register *)
-alias "v=xclip -o" # output copied content (paste)
+alias "p=xclip -o" # output copied content (paste)
 
 # GIT
 source /usr/share/git/completion/git-prompt.sh
