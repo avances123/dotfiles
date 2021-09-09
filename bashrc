@@ -11,8 +11,8 @@ export PATH="/usr/lib/ccache/bin/:$PATH"
 alias ls='ls --color=auto'
 alias ll='ls -lrtah --color=auto'
 alias grep='grep --color=auto'
-alias "c=xclip" # copy to X clipboard (register *)
-alias "p=xclip -o" # output copied content (paste)
+alias "c=xclip -selection clipboard" # copy to X clipboard (register *)
+alias "v=xclip -o -selection clipboard" # output copied content (paste)
 
 # GIT
 source /usr/share/git/completion/git-prompt.sh
@@ -40,7 +40,6 @@ export EDITOR='vim'
 export NMON=mcdtkn
 eval "$(fasd --init auto)"
 source /usr/share/cdargs/cdargs-bash.sh                                                                                                                                                                                                     
-alias v='f -e vim' # quick opening files with vim
 source /usr/share/LS_COLORS/dircolors.sh
 
 # ANDROID
@@ -59,6 +58,6 @@ fi
 
 ### Bashhub.com Installation.
 ### This Should be at the EOF. https://bashhub.com/docs
-if [ -f ~/.bashhub/bashhub.sh ]; then
-    source ~/.bashhub/bashhub.sh
-fi
+#if [ -f ~/.bashhub/bashhub.sh ]; then
+#    source ~/.bashhub/bashhub.sh
+#fi

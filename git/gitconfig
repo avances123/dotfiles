@@ -41,5 +41,8 @@
 	show = diff-so-fancy | less --tabs=1,5 -RFX
 [commit]
 	gpgsign = false
+    template = ~/.git-commit-template
 [init]
 	templatedir = ~/.git-templates
+[pull]
+	rebase = false
