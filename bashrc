@@ -51,6 +51,10 @@ export PATH=$ANDROID_HOME/tools:$PATH
 export PATH=$ANDROID_HOME/emulator:$PATH
 
 
+
+# K8S
+export PATH="${PATH}:${HOME}/.krew/bin"
+
 # Configuracion optativa del usuario
 if [ -f ~/.bashrc_curro ]; then
     . ~/.bashrc_curro
